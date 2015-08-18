@@ -18,7 +18,7 @@ type Config struct {
 
 var config Config
 
-var configFile = "vcp-spam.conf.json"
+var configFile = "'/etc/vcp-spam.conf.json"
 
 func main() {
 	log.Println("Loading configuration...")
