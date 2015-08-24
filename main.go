@@ -22,7 +22,7 @@ var configFile = "'/etc/vcp-spam.conf.json"
 
 func main() {
 	log.Println("Loading configuration...")
-	err := smallcfg.LoadConfig(configFile, &config)
+	err := smallcfg.Load(configFile, &config)
 	if err != nil {
 		log.Fatalln(err)
 	}
